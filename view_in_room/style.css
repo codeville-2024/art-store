@@ -1,0 +1,35 @@
+body {
+  background-image: url("/images/Wall-mockup.png");
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#img {
+  margin-left: 620px;
+  margin-right: 620px;
+  margin-top: 132px;
+  margin-bottom: 81.41px;
+}
+.pic {
+  filter: drop-shadow(8px 8px 15px rgba(0, 0, 0, 0.5));
+}
+
+#p {
+  margin-left: 703px;
+  margin-right: 700px;
+  /* margin-top: 81.41px;
+  margin-bottom: 10px; */
+  row-gap: 81.41px;
+}
+
+#line {
+  margin-right: 408px;
+  margin-left: 411px;
+  /* margin-top: 479px;
+  margin-bottom: 402px; */
+  row-gap: 10px;
+}
