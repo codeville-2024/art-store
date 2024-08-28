@@ -151,6 +151,7 @@ a:hover {
 }
 
 #mix {
+  margin-top: 24px;
   width: 392px;
   height: 72px;
   top: 96px;
@@ -200,4 +201,13 @@ button {
 
 #l {
   margin-top: 16px;
+}
+
+#dd {
+  margin-top: 23.5px;
+  font-family: Karla;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
 }
