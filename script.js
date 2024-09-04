@@ -25,6 +25,7 @@
 
 const artworks = [
   {
+    id: 1,
     name: "Into the walls",
     price: 450.0,
     artist: "Ria Arante",
@@ -32,13 +33,15 @@ const artworks = [
   },
 
   {
+    id: 2,
     name: "Wallowing walls",
-    price: 299.99,
+    price: 45.99,
     artist: "Hettie Richards",
     image: "/images/Painting1.png",
   },
 
   {
+    id: 3,
     name: "J Resistance",
     price: 299.99,
     artist: "Ria Arante",
@@ -46,15 +49,17 @@ const artworks = [
   },
 
   {
+    id: 4,
     name: "Warm Basket",
-    price: 299.99,
+    price: 29.99,
     artist: "Flora Powers",
     image: "/images/Painting3.png",
   },
 
   {
+    id: 5,
     name: "The Vonnegut",
-    price: 299.99,
+    price: 300.99,
     artist: "Ria Arante",
     image: "/images/Painting4.png",
   },
@@ -63,16 +68,20 @@ const artworks = [
 const list = document.getElementById("art-list");
 
 artworks.forEach((artwork) => {
-  const item = document.createElement("p");
-  item.setAttribute("class", "productText");
-  const imagery = document.createElement("img");
-  imagery.setAttribute("class", "productImage");
-  const divly = document.createElement("div");
-  divly.setAttribute("class", "itemContainer");
-});
+  const newDiv = document.createElement("div");
+  list.appendChild(newDiv);
+  newDiv.id = "paintings";
+  newDiv.innerHTML = `<img src="${artwork.image}"/>
+<p>${artwork.name}</p>
+<p>${artwork.price}</p>
+<p>${artwork.artist}</p>
+`;
 
-imagery.src = `${artwork.image}`;
-item.textContent = `${artwork.name} - $${artwork.price}-$${artwork.artist}`;
-divly.appenChild(item);
-divly.appenChild(imagery);
-list.appenChild(divly);
+  // Let productId as a block-scoped variable
+  let productId = artwork.id;
+  newDiv.addEventListener("click", () => {
+    // redirect to the details page with the product ID as a parameter
+
+    window.location.href = `paintings.html?id=${productId}`;
+  });
+});
