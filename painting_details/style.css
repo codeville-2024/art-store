@@ -119,6 +119,7 @@ a:hover {
 #pg {
   display: flex;
   column-gap: 96px;
+  margin-top: 30px;
 }
 
 #sect2 {
