@@ -123,8 +123,8 @@ function getProductDetails(productId) {
   );
 
   if (product) {
-    const artImage = document.getElementById("main");
-    artImage.src = `${product.image}`;
+    const img = document.getElementById("pic");
+    img.src = `${product.image}`;
   } else {
     console.error(`Product with ID ${productId} not found`);
   }
@@ -132,8 +132,21 @@ function getProductDetails(productId) {
 
 getProductDetails(productId);
 
-view.addEventListener("click", () => {
-  // redirect to the details page with the product ID as a parameter
+// artworks.forEach((artwork) => {
+//   const newDiv = document.createElement("div");
+//   list.appendChild(newDiv);
+//   newDiv.id = "paintings";
+//   newDiv.innerHTML = `<img src="${artwork.image}"/>
+// <p>${artwork.name}</p>
+// <p>${artwork.price}</p>
+// <p>${artwork.artist}</p>
+// `;
 
-  window.location.href = `viewroom.html?id=${productId}`;
-});
+//   // Let productId as a block-scoped variable
+//   let productId = artwork.id;
+//   newDiv.addEventListener("click", () => {
+//     // redirect to the details page with the product ID as a parameter
+
+//     window.location.href = `paintings.html?id=${productId}`;
+//   });
+// });
