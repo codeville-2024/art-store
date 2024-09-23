@@ -1,12 +1,12 @@
 # CommunArt by Onyiaorah Zimife
 
-**Description:**
+## Description
 
 A simple online store where you can buy a variety of paintings and sculptures.
 
-Here is a live link [https://codeville-2024.github.io/art-store/](CommunArt)
+Here is a live link: [https://codeville-2024.github.io/art-store/](CommunArt)
 
-**Technologies:**
+## Technologies
 * HTML
 * CSS
 * JavaScript
